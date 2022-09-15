@@ -10,20 +10,17 @@ using System.Windows.Forms;
 
 namespace Livraria
 {
-    public partial class Form1 : Form
+    public partial class SelecaoTelas : Form
     {
-        public Form1()
+        public SelecaoTelas()
         {
             InitializeComponent();
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
+        private void btnCliente_Click(object sender, EventArgs e)
         {
-            if (txtLogin.Text == "etec" && txtSenha.Text == "etec")
-            {
-                SelecaoTelas selecaoTelas = new SelecaoTelas();
-                selecaoTelas.Show();
-            }
+            CadastrarCliente cliente = new CadastrarCliente();
+            cliente.Show();
         }
     }
 }
